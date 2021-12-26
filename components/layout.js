@@ -4,7 +4,7 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Aiden Smith'
+const name = 'Voxel'
 export const siteTitle = "Voxel's Blog"
 
 export default function Layout({ children, home }) {
@@ -28,7 +28,41 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <Image
+            <div className="navbar">
+              {/* <svg>logo</svg> */}
+            </div>
+              <nav className="site-nav">
+                <div className={styles.logo}>
+                  <Link href="/">
+                    <a>
+                      adwadwadaw
+                    </a>
+                  </Link>
+                </div>
+                <ul id="menu" className="menu">
+                  <li className="menu-item menu-anim menu-about">
+                    <Link href={`/about-me`}>
+                      <a>About</a>
+                    </Link>
+                  </li>
+                  <li className="menu-item menu-anim menu-blog">
+                    <Link href={`/Blog`}>
+                      <a>Blog</a>
+                    </Link>
+                  </li>
+                  <li className="menu-item menu-anim menu-projects">
+                    <Link href={`/projects`}>
+                      <a>Projects</a>
+                    </Link>
+                  </li>
+                  <li className="menu-item menu-anim menu-contact-me">
+                    <Link href={`/contact-me`}>
+                      <a>Contact Me</a>
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            {/* <Image
               priority
               src="/images/profile.jpg"
               className={utilStyles.borderCircle}
@@ -36,11 +70,12 @@ export default function Layout({ children, home }) {
               width={144}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className={utilStyles.heading2Xl}>{name}</h1> */}
           </>
         ) : (
           <>
-            <Link href="/">
+          {/* Profile image at top of all posts. */}
+            {/* <Link href="/">
               <a>
                 <Image
                   priority
@@ -56,7 +91,7 @@ export default function Layout({ children, home }) {
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
-            </h2>
+            </h2> */}
           </>
         )}
       </header>

@@ -6,22 +6,57 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  color: #fefefe;
 }
 
 * {
   box-sizing: border-box;
+  background-color: #1c181f;
 }
 
 a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-a:hover {
+  color: #fefefe;
   text-decoration: underline;
 }
+
+/*
+a:hover {
+
+}
+*/
 
 img {
   max-width: 100%;
   display: block;
+}
+
+.menu {
+  padding: 0;
+}
+.menu a {
+  text-decoration: none;
+}
+
+.menu-item {
+  display: inline-block;
+  position: relative;
+  margin: 1rem 1rem;
+}
+
+.menu-anim::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00d9ff;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+
+.menu-anim:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
 }
