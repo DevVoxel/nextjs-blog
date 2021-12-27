@@ -51,7 +51,7 @@ img {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #00d9ff;
+  background-color: #1cfffb;
   transform-origin: bottom center;
   transition: transform 0.25s ease-out;
 }
@@ -59,4 +59,8 @@ img {
 .menu-anim:hover::after {
   transform: scaleX(1);
   transform-origin: bottom center;
+}
+
+.navbar {
+  height: 100px;
 }

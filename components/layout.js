@@ -28,14 +28,22 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
+            <Image
+              priority
+              src="/images/profile_mealtime.png"
+              className={utilStyles.borderCircle}
+              height={144}
+              width={144}
+              alt={name}
+            />
+            <h1 className={utilStyles.headingXl}>{name}</h1>
             <div className="navbar">
-              {/* <svg>logo</svg> */}
-            </div>
               <nav className="site-nav">
                 <div className={styles.logo}>
                   <Link href="/">
                     <a>
-                      adwadwadaw
+                      {/* SVG LOGO */}
+                      
                     </a>
                   </Link>
                 </div>
@@ -62,15 +70,7 @@ export default function Layout({ children, home }) {
                   </li>
                 </ul>
               </nav>
-            {/* <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1> */}
+            </div>
           </>
         ) : (
           <>

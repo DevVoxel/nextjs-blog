@@ -50,4 +50,8 @@
   .lightText {
     color: #666;
   }
-  
+
+  .blogBox {
+    border: 1px solid #62596ba6;
+    padding: 20px 20px 20px 20px;
+  }
