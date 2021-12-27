@@ -43,7 +43,6 @@ export default function Layout({ children, home }) {
                   <Link href="/">
                     <a>
                       {/* SVG LOGO */}
-                      
                     </a>
                   </Link>
                 </div>
@@ -75,23 +74,48 @@ export default function Layout({ children, home }) {
         ) : (
           <>
           {/* Profile image at top of all posts. */}
-            {/* <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2> */}
+          <Image
+              priority
+              src="/images/profile_mealtime.png"
+              className={utilStyles.borderCircle}
+              height={144}
+              width={144}
+              alt={name}
+            />
+            <h1 className={utilStyles.headingXl}>{name}</h1>
+            <div className="navbar">
+              <nav className="site-nav">
+                <div className={styles.logo}>
+                  <Link href="/">
+                    <a>
+                      {/* SVG LOGO */}
+                    </a>
+                  </Link>
+                </div>
+                <ul id="menu" className="menu">
+                  <li className="menu-item menu-anim menu-about">
+                    <Link href={`/about-me`}>
+                      <a>About</a>
+                    </Link>
+                  </li>
+                  <li className="menu-item menu-anim menu-blog">
+                    <Link href={`/Blog`}>
+                      <a>Blog</a>
+                    </Link>
+                  </li>
+                  <li className="menu-item menu-anim menu-projects">
+                    <Link href={`/projects`}>
+                      <a>Projects</a>
+                    </Link>
+                  </li>
+                  <li className="menu-item menu-anim menu-contact-me">
+                    <Link href={`/contact-me`}>
+                      <a>Contact Me</a>
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </>
         )}
       </header>
