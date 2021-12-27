@@ -30,12 +30,12 @@ export default function Layout({ children, home }) {
           <>
 
             {/* <h1 className={utilStyles.headingXl}>{name}</h1> */}
-            <div className="navbar">
+            <div className="navbarMain">
               <nav className="site-nav">
                 <div className={styles.logo}>
                   <Link href="/">
                     <a>
-                      {/* SVG LOGO */}
+                      {/* SVG LOGO EVENTUALLY */}
                       <Image
                         priority
                         src="/images/profile_mealtime.png"
