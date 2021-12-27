@@ -4,14 +4,14 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
+  line-height: 1.4;
   font-size: 18px;
   color: #fefefe;
+  background-color: #1c181f;
 }
 
 * {
   box-sizing: border-box;
-  background-color: #1c181f;
 }
 
 a {
@@ -19,18 +19,14 @@ a {
   text-decoration: underline;
 }
 
-/*
-a:hover {
-
-}
-*/
-
 img {
   max-width: 100%;
   display: block;
 }
 
 .menu {
+  float: right;
+  margin: 10px 0 0 0 ;
   padding: 0;
 }
 .menu a {
@@ -40,7 +36,7 @@ img {
 .menu-item {
   display: inline-block;
   position: relative;
-  margin: 1rem 1rem;
+  margin: 0.8rem 0.8rem;
 }
 
 .menu-anim::after {
@@ -61,6 +57,22 @@ img {
   transform-origin: bottom center;
 }
 
+/* Enabling this will set the navbar into blogBox border. Increase height of .menu as well.
 .navbar {
-  height: 100px;
+  height: 80px;
+}
+
+.site-nav {
+  height: 72px;
+  width: 500px;
+}
+
+.menu-about {
+  padding-left: 10px;
+} */
+
+.navbar {
+  height: 100%;
+  width: 100%;
+  margin: 2rem;
 }

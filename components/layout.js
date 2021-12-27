@@ -28,21 +28,22 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <Image
-              priority
-              src="/images/profile_mealtime.png"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h1 className={utilStyles.headingXl}>{name}</h1>
+
+            {/* <h1 className={utilStyles.headingXl}>{name}</h1> */}
             <div className="navbar">
               <nav className="site-nav">
                 <div className={styles.logo}>
                   <Link href="/">
                     <a>
                       {/* SVG LOGO */}
+                      <Image
+                        priority
+                        src="/images/profile_mealtime.png"
+                        className={`${utilStyles.borderCircle}`}
+                        height={72}
+                        width={72}
+                        alt={name}
+                      />
                     </a>
                   </Link>
                 </div>
