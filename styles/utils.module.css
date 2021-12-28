@@ -55,3 +55,31 @@
     border: 1px solid #62596ba6;
     padding: 20px 20px 20px 20px;
   }
+
+  .blockquote {
+    margin: 1rem 0;
+  }
+
+  .asideBox {
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #62596ba6;
+    padding: 1rem 1.25rem;
+    margin: 0 0 0 1rem;
+    width: 14rem;
+    z-index: 999;
+    float: right;
+  }
+
+  .tocList {
+    font-size: 90%;
+  }
+
+  .removeDecor a {
+    text-decoration: none;
+    list-style: circle;
+  }
+
+  .removeDecor {
+    list-style: disc;
+  }

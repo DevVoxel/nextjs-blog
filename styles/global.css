@@ -24,6 +24,10 @@ img {
   display: block;
 }
 
+p {
+  margin: 0;
+}
+
 .menu {
   float: right;
   margin: 10px 0 0 0 ;
@@ -36,7 +40,7 @@ img {
 .menu-item {
   display: inline-block;
   position: relative;
-  margin: 0.8rem 0.8rem;
+  margin: 0.8rem 0.9rem;
 }
 
 .menu-anim::after {
@@ -74,4 +78,15 @@ img {
 .navbarMain {
   width: 100%;
   margin: 2rem;
+}
+
+#toc-title {
+  position: relative;
+  margin: 0 0 0.75rem 0;
+  font-weight: 80%;
+  font-size: 110%;
+}
+
+.page-content {
+  overflow: hidden;
 }

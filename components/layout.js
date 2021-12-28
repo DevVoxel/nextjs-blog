@@ -49,12 +49,12 @@ export default function Layout({ children, home }) {
                 </div>
                 <ul id="menu" className="menu">
                   <li className="menu-item menu-anim menu-about">
-                    <Link href={`/about-me`}>
+                    <Link href={`/about`}>
                       <a>About</a>
                     </Link>
                   </li>
                   <li className="menu-item menu-anim menu-blog">
-                    <Link href={`/Blog`}>
+                    <Link href={`/blog`}>
                       <a>Blog</a>
                     </Link>
                   </li>
@@ -75,14 +75,18 @@ export default function Layout({ children, home }) {
         ) : (
           <>
           {/* Profile image at top of all posts. */}
-          <Image
-              priority
-              src="/images/profile_mealtime.png"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
+          <Link href="/">
+            <a>
+              <Image
+                  priority
+                  src="/images/profile_mealtime.png"
+                  className={utilStyles.borderCircle}
+                  height={144}
+                  width={144}
+                  alt={name}
+                />
+              </a>
+            </Link>
             <h1 className={utilStyles.headingXl}>{name}</h1>
             <div className="navbar">
               <nav className="site-nav">
@@ -95,7 +99,7 @@ export default function Layout({ children, home }) {
                 </div>
                 <ul id="menu" className="menu">
                   <li className="menu-item menu-anim menu-about">
-                    <Link href={`/about-me`}>
+                    <Link href={`/about`}>
                       <a>About</a>
                     </Link>
                   </li>
