@@ -1,21 +1,18 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "./layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
 
-const name = 'Voxel'
-export const siteTitle = "Voxel's Blog"
+const name = "Voxel";
+export const siteTitle = "Voxel's Blog";
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Voxel's personal blog website."
-        />
+        <meta name="description" content="Voxel's personal blog website." />
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
@@ -28,7 +25,6 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-
             {/* <h1 className={utilStyles.headingXl}>{name}</h1> */}
             <div className="navbarMain">
               <nav className="site-nav">
@@ -74,10 +70,10 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-          {/* Profile image at top of all posts. */}
-          <Link href="/">
-            <a>
-              <Image
+            {/* Profile image at top of all posts. */}
+            <Link href="/">
+              <a>
+                <Image
                   priority
                   src="/images/profile_mealtime.png"
                   className={utilStyles.borderCircle}
@@ -92,9 +88,7 @@ export default function Layout({ children, home }) {
               <nav className="site-nav">
                 <div className={styles.logo}>
                   <Link href="/">
-                    <a>
-                      {/* SVG LOGO */}
-                    </a>
+                    <a>{/* SVG LOGO */}</a>
                   </Link>
                 </div>
                 <ul id="menu" className="menu">
@@ -133,5 +127,5 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
-  )
+  );
 }
