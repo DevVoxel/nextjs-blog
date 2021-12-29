@@ -15,7 +15,7 @@ export async function getStaticProps() {
 }
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
+    <Layout>
       <section
         className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.blogBox}`}
       >
