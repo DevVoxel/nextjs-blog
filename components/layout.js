@@ -50,7 +50,7 @@ export default function Layout({ children, home }) {
                     </Link>
                   </li>
                   <li className="menu-item menu-anim menu-blog">
-                    <Link href={`/blog`}>
+                    <Link href={`/`}>
                       <a>Blog</a>
                     </Link>
                   </li>
@@ -98,7 +98,7 @@ export default function Layout({ children, home }) {
                     </Link>
                   </li>
                   <li className="menu-item menu-anim menu-blog">
-                    <Link href={`/Blog`}>
+                    <Link href={`/`}>
                       <a>Blog</a>
                     </Link>
                   </li>
