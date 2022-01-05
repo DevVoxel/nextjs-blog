@@ -24,99 +24,98 @@ export default function Layout({ children, home }) {
       </Head>
       <header className={styles.header}>
         {home ? (
- <>
- {/* Profile image at top of all posts. */}
- <Link href="/">
-   <a>
-     <Image
-       priority
-       src="/images/profile_mealtime.png"
-       className={utilStyles.borderCircle}
-       height={144}
-       width={144}
-       alt={name}
-     />
-   </a>
- </Link>
- <h1 className={utilStyles.headingXl}>{name}</h1>
- <div className="navbar">
-   <nav className="site-nav">
-     <div className={styles.logo}>
-       <Link href="/">
-         <a>{/* SVG LOGO */}</a>
-       </Link>
-     </div>
-     <ul id="menu" className="menu">
-       <li className="menu-item menu-anim menu-about">
-         <Link href={`/about`}>
-           <a>About</a>
-         </Link>
-       </li>
-       <li className="menu-item menu-anim menu-blog">
-         <Link href={`/`}>
-           <a>Blog</a>
-         </Link>
-       </li>
-       <li className="menu-item menu-anim menu-projects">
-         <Link href={`/projects`}>
-           <a>Projects</a>
-         </Link>
-       </li>
-       <li className="menu-item menu-anim menu-contact-me">
-         <Link href={`/contact-me`}>
-           <a>Contact Me</a>
-         </Link>
-       </li>
-     </ul>
-   </nav>
- </div>
-</>
+          <>
+            {/* Profile image at top of all posts. */}
+            <Link href="/">
+              <a>
+                <Image
+                  priority
+                  src="/images/profile_mealtime.png"
+                  className={utilStyles.borderCircle}
+                  height={144}
+                  width={144}
+                  alt={name}
+                />
+              </a>
+            </Link>
+            <h1 className={utilStyles.headingXl}>{name}</h1>
+            <div className="navbar">
+              <nav className="site-nav">
+                <div className={styles.logo}>
+                  <Link href="/">
+                    <a>{/* SVG LOGO */}</a>
+                  </Link>
+                </div>
+                <ul id="menu" className="menu">
+                  <li className="menu-item menu-anim menu-about">
+                    <Link href={`/about`}>
+                      <a>About</a>
+                    </Link>
+                  </li>
+                  <li className="menu-item menu-anim menu-blog">
+                    <Link href={`/`}>
+                      <a>Blog</a>
+                    </Link>
+                  </li>
+                  <li className="menu-item menu-anim menu-projects">
+                    <Link href={`/projects`}>
+                      <a>Projects</a>
+                    </Link>
+                  </li>
+                  <li className="menu-item menu-anim menu-contact-me">
+                    <Link href={`/contact-me`}>
+                      <a>Contact Me</a>
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </>
         ) : (
           <>
-          {/* <h1 className={utilStyles.headingXl}>{name}</h1> */}
-          <div className="navbarMain">
-            <nav className="site-nav">
-              <div className={styles.logo}>
-                <Link href="/">
-                  <a>
-                    {/* SVG LOGO EVENTUALLY */}
-                    <Image
-                      priority
-                      src="/images/profile_mealtime.png"
-                      className={`${utilStyles.borderCircle}`}
-                      height={72}
-                      width={72}
-                      alt={name}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <ul id="menu" className="menu">
-                <li className="menu-item menu-anim menu-about">
-                  <Link href={`/about`}>
-                    <a>About</a>
+            {/* <h1 className={utilStyles.headingXl}>{name}</h1> */}
+            <div className="navbarMain">
+              <nav className="site-nav">
+                <div className={styles.logo}>
+                  <Link href="/">
+                    <a>
+                      {/* SVG LOGO EVENTUALLY */}
+                      <Image
+                        priority
+                        src="/images/profile_mealtime.png"
+                        className={`${utilStyles.borderCircle}`}
+                        height={72}
+                        width={72}
+                        alt={name}
+                      />
+                    </a>
                   </Link>
-                </li>
-                <li className="menu-item menu-anim menu-blog">
-                  <Link href={`/`}>
-                    <a>Blog</a>
-                  </Link>
-                </li>
-                <li className="menu-item menu-anim menu-projects">
-                  <Link href={`/projects`}>
-                    <a>Projects</a>
-                  </Link>
-                </li>
-                <li className="menu-item menu-anim menu-contact-me">
-                  <Link href={`/contact-me`}>
-                    <a>Contact Me</a>
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </>
-         
+                </div>
+                <ul id="menu" className="menu">
+                  <li className="menu-item menu-anim menu-about">
+                    <Link href={`/about`}>
+                      <a>About</a>
+                    </Link>
+                  </li>
+                  <li className="menu-item menu-anim menu-blog">
+                    <Link href={`/`}>
+                      <a>Blog</a>
+                    </Link>
+                  </li>
+                  <li className="menu-item menu-anim menu-projects">
+                    <Link href={`/projects`}>
+                      <a>Projects</a>
+                    </Link>
+                  </li>
+                  <li className="menu-item menu-anim menu-contact-me">
+                    <Link href={`/contact-me`}>
+                      <a>Contact Me</a>
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </>
         )}
       </header>
       <main>{children}</main>
