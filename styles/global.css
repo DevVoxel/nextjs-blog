@@ -10,8 +10,10 @@ body {
   background-color: #1c181f;
 }
 
-* {
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 a {
@@ -60,20 +62,6 @@ p {
   transform: scaleX(1);
   transform-origin: bottom center;
 }
-
-/* Enabling this will set the navbar into blogBox border. Increase height of .menu as well.
-.navbar {
-  height: 80px;
-}
-
-.site-nav {
-  height: 72px;
-  width: 500px;
-}
-
-.menu-about {
-  padding-left: 10px;
-} */
 
 .navbarMain {
   width: 100%;
