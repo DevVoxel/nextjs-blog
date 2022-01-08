@@ -8,11 +8,11 @@ import hovercard from "../styles/hovercard.module.css";
 const name = "Voxel";
 export const siteTitle = "Voxel's Blog";
 
-export default function Layout({ children, home }) {
+export default function Hovercard() {
   return (
     <div className={styles.container}>
       <div className={hovercard.card}>
-        <div classname={hovercard.cardcontent}>
+        <div className={hovercard.cardcontent}>
           <h2 className={hovercard.cardtitle}>Random Title</h2>
           <p className={hovercard.cardbody}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
@@ -22,12 +22,6 @@ export default function Layout({ children, home }) {
             Learn More
           </a>
         </div>
-      </div>
-
-      <div className={styles.backToHome}>
-        <Link href="/">
-          <a>← Back to home</a>
-        </Link>
       </div>
     </div>
   );
