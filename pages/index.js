@@ -14,6 +14,7 @@ export async function getStaticProps() {
     },
   };
 }
+
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
@@ -38,7 +39,6 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
-      <Hovercard />
     </Layout>
   );
 }
