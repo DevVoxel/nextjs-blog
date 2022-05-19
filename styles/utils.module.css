@@ -83,3 +83,14 @@
 .removeDecor {
   list-style: disc;
 }
+
+.uselessCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightEdge {
+  float: right;
+  text-decoration: none;
+}
