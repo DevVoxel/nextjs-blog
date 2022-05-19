@@ -44,6 +44,7 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
+      <br/>
       <p className={`${utilStyles.uselessCenter}`}>Sidenote: Every post has a French translation! Press "FR" to view!</p>
     </Layout>
   );
