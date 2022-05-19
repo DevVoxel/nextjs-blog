@@ -4,15 +4,15 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
-const name = "Voxel";
-export const siteTitle = "Voxel's Blog";
+const name = "Aiden Smith";
+export const siteTitle = "Aiden Smith - Blog";
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Voxel's personal blog website." />
+        <meta name="description" content="Aiden Smith's personal blog website." />
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
