@@ -5,18 +5,17 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import hovercard from "../styles/hovercard.module.css";
 
-const name = "Voxel";
-export const siteTitle = "Voxel's Blog";
+const name = "Aiden Smith";
+export const siteTitle = "";
 
 export default function Hovercard() {
   return (
-    <div className={styles.container}>
+    <div className={`${utilStyles.uselessCenter}`}>
       <div className={hovercard.card}>
         <div className={hovercard.cardcontent}>
-          <h2 className={hovercard.cardtitle}>Random Title</h2>
+          <h2 className={hovercard.cardtitle}>3D render - Kdoms</h2>
           <p className={hovercard.cardbody}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            labore consequatur illo in quidem!
+            Check out this cool image that was rendered in 3D by my friend Kyle, otherwise known as Kdoms.
           </p>
           <a href="#" className={hovercard.button}>
             Learn More
