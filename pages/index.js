@@ -19,7 +19,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-        <title>Voxel's page</title>
+        <title>Aiden Smith - Blog</title>
       </Head>
       <section
         className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.blogBox}`}
@@ -31,6 +31,11 @@ export default function Home({ allPostsData }) {
               <Link href={`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
+              <Link href={`/posts-FR/${id}-FR`}>
+                <a className={`${utilStyles.rightEdge}`}>
+                  FR
+                </a>
+              </Link>
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
@@ -39,6 +44,7 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
+      <p className={`${utilStyles.uselessCenter}`}>Sidenote: Every post has a French translation! Press "FR" to view!</p>
     </Layout>
   );
 }
