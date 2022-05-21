@@ -3,7 +3,7 @@ title: 'Welcome to My Blog!'
 date: '2022-05-18'
 ---
 
-Welcome to basically my first blog post! 
+Welcome to basically my first blog post!
 
 It has been a while since I have revisited this website however I am coming back to it so I can make some needed modifications.  I have a list of things I would like to add, however that will be done in another post.  
 
