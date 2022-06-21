@@ -24,7 +24,7 @@ Install dependencies
   npm install
 ```
 
-Start the server
+Start the Developer Server
 
 ```bash
   npm run dev
